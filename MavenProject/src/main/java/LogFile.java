@@ -10,7 +10,7 @@ public class LogFile {
     Calendar calendar = Calendar.getInstance();
          System.out.println(dateFormat.format(calendar.getTime()));
 
-    // Printing  some information...
+    // Print  some information...
         System.out.println("ERA: " + calendar.get(Calendar.ERA));
         System.out.println("YEAR: " + calendar.get(Calendar.YEAR));
         System.out.println("MONTH: " + calendar.get(Calendar.MONTH));
