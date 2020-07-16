@@ -26,7 +26,7 @@ public class LogFile {
         System.out.println("HOUR_OF_DAY: " + calendar.get(Calendar.HOUR_OF_DAY));
         System.out.println("MINUTE: " + calendar.get(Calendar.MINUTE));
         System.out.println("SECOND: " + calendar.get(Calendar.SECOND));
-        System.out.println("MILLISECOND:: " + calendar.get(Calendar.MILLISECOND));
+        System.out.println("MILLISECOND: " + calendar.get(Calendar.MILLISECOND));
     }
 
 }
