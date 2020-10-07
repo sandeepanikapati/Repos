@@ -41,7 +41,7 @@
     <snapshotRepository>
         <id>snapshots</id>
         <name>MyArt-69-snapshots</name>
-        <url>http://mill.jfrog.info:12700/artifactory/libs-snapshot-local</url>
+        <url>http://mill.jfrog.info:12700/artifactory/libs-snapshot</url>
     </snapshotRepository>
 </distributionManagement>
 
