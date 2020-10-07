@@ -33,16 +33,16 @@
     </dependencies>
 
 <distributionManagement>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>MyArt-69-releases</name>
-        <url>http://mill.jfrog.info:12700/artifactory/libs-snapshot-local</url>
-    </snapshotRepository>
     <repository>
         <id>central</id>
         <name>MyArt-69-releases</name>
-        <url>http://mill.jfrog.info:12700/artifactory/libs-release</url>
-    </repository>         
+        <url>http://mill.jfrog.info:12700/artifactory/libs-snapshot-local</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>MyArt-69-snapshots</name>
+        <url>http://mill.jfrog.info:12700/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
 </distributionManagement>
 
     <build>
