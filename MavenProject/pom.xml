@@ -36,7 +36,7 @@
     <repository>
         <id>central</id>
         <name>MyArt-69-releases</name>
-        <url>http://mill.jfrog.info:12700/artifactory/libs-snapshot-local</url>
+        <url>https://repo1.maven.org/maven2/</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
