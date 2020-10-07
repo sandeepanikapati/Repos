@@ -38,6 +38,11 @@
         <name>Sandeepa-Mac-snapshots</name>
         <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
     </snapshotRepository>
+    <repository>
+        <id>central</id>
+        <name>MyArt-69-releases</name>
+        <url>http://mill.jfrog.info:12700/artifactory/libs-release</url>
+    </repository>         
 </distributionManagement>
 
     <build>
