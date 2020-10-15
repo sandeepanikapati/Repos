@@ -6,7 +6,7 @@
 
     <groupId>org</groupId>
     <artifactId>MavenProject-SNAPSHOT</artifactId>
-    <version>1.0</version>
+   // <version>1.0</version>
     <dependencies>
         <dependency>
             <groupId>org.apache.commons</groupId>
