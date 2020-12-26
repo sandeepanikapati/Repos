@@ -63,6 +63,21 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            
+             <plugin>
+     <groupId>org.apache.commons</groupId>
+     <artifactId>commons-lang3</artifactId>
+</plugin>
+
+ <plugin>
+    <groupId>org.apache.activemq</groupId>
+    <artifactId>activemq-core</artifactId>
+   </plugin>      
+
+ <plugin>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-core</artifactId>
+</plugin>
             </plugins>
     </build>
     
