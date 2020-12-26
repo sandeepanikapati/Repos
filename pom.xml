@@ -136,17 +136,7 @@
                 <artifactId>ehcache</artifactId>
                 <version>2.10.6</version>
             </dependency>
-            <dependency>
-                <groupId>com.mastercard.labs</groupId>
-                <artifactId>spring-boot-starter-azure</artifactId>
-                <version>${spring-boot-starter-azure.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>com.microsoft.azure</groupId>
-                        <artifactId>spring-cloud-azure-appconfiguration-config</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -164,32 +154,13 @@
                 <artifactId>swagger-annotations</artifactId>
                 <version>2.1.2</version>
             </dependency>
-            <dependency>
-                <groupId>com.mastercard.mclabs.caas</groupId>
-                <artifactId>caas-starter-server</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.mastercard.mclabs.caas</groupId>
-                <artifactId>caas-client-config</artifactId>
-                <version>${project.version}</version>
-            </dependency>
+
             <dependency>
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>jsr305</artifactId>
                 <version>3.0.2</version>
             </dependency>
-            <dependency>
-                <groupId>com.mastercard.labs.common</groupId>
-                <artifactId>common_utils</artifactId>
-                <version>1.0.0</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.projectlombok</groupId>
-                        <artifactId>lombok</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
+
             <dependency>
                 <groupId>org.hibernate.javax.persistence</groupId>
                 <artifactId>hibernate-jpa-2.1-api</artifactId>
