@@ -42,7 +42,19 @@
 
     <dependencyManagement>
         <dependencies>
-		  <dependency>
+
+		 <dependency>
+    <groupId>commons-collections</groupId>
+    <artifactId>commons-collections</artifactId>
+    <version>3.2.1</version>
+</dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.1</version>
+        </dependency>
+  <dependency>
     <groupId>org.apache.activemq</groupId>
     <artifactId>activemq-core</artifactId>
     <version>5.7.0</version>
@@ -53,7 +65,6 @@
     <artifactId>jackson-core</artifactId>
     <version>2.11.2</version>
 </dependency>
-		
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
