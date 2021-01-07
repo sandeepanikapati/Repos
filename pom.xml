@@ -35,7 +35,7 @@
         <jgitflow-maven-plugin.version>1.0-m5.1</jgitflow-maven-plugin.version>
         <netty-codec-http.version>4.1.53.Final</netty-codec-http.version>
         <netty-codec-http2.version>4.1.53.Final</netty-codec-http2.version>
-        <netty-codec.version>4.1.45.Final</netty-codec.version>
+        <netty-codec.version>4.1.46.Final</netty-codec.version>
         <spring-boot-starter-azure.version>2.3.7</spring-boot-starter-azure.version>
         <spring-cloud-sleuth.version>2.2.2.RELEASE</spring-cloud-sleuth.version>
     </properties>
