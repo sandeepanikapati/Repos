@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org</groupId>
-    <artifactId>MavenProject</artifactId>
-         <version>1.0-SNAPSHOT</version>
+    <artifactId>MavenProject-SNAPSHOT</artifactId>
+         <version>1.0</version>
     <dependencies>
  <dependency>
     <groupId>commons-collections</groupId>
