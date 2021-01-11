@@ -5,6 +5,7 @@
     <artifactId>caas-server</artifactId>
     <packaging>jar</packaging>
     <name>caas-server</name>
+    <version>2.0.13-SNAPSHOT</version>
     <description>Cryptography as a Service Development Server</description>
 
  <!--   <parent>
