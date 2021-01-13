@@ -3,10 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>caas-server</artifactId>
-    <groupId>com.mastercard.mclabs.caas</groupId>
+
     <packaging>jar</packaging>
     <name>caas-server</name>
-    <version>2.0.13-SNAPSHOT</version>
+
     <description>Cryptography as a Service Development Server</description>
 
    <parent>
