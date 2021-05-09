@@ -1,0 +1,39 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+- task: ArtifactoryToolsInstaller@1
+  inputs:
+    artifactoryService: 'Kayal_Art'
+    cliInstallationRepo: 'zip.remote.jfrog.cli'
+    installCustomVersion: true
+    cliVersion: '1.43.2'
+- task: ArtifactoryProperties@1
+  inputs:
+    command: 'set'
+    artifactoryService: 'Kayal_Art'
+    setProps: 'Lifecycle.Retention=thirty-days'
+    specSource: 'taskConfiguration'
+    fileSpec: |
+      {
+        "files": [
+          {
+            "pattern": "generic-local/*.zip"
+          }
+        ]
+      }
