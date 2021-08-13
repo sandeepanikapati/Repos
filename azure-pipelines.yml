@@ -17,8 +17,8 @@ steps:
       {
         "files": [
           {
-            "pattern": "libs-snapshot-local/com/example/maven-samples/multi-module-parent/1.0-SNAPSHOT/",
-            "target": "libs-snapshot-local/"
+            "pattern": "generic-local/*.txt",
+            "target": "test/"
           }
         ]
       }
