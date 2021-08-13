@@ -22,6 +22,14 @@ steps:
     goals: 'package'
 - task: ArtifactoryGenericDownload@3
   inputs:
-    connection: 'Kayal_Art'
     specSource: 'taskConfiguration'
+    fileSpec: |
+      {
+        "files": [
+          {
+            "pattern": "libs-snapshot-local/",
+            "target": "org/"
+          }
+        ]
+      }
     failNoOp: true
