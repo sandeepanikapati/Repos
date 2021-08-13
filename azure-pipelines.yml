@@ -18,7 +18,7 @@ steps:
         "files": [
           {
             "pattern": "generic-local/*.txt",
-            "target": "test/"
+            "target": "generic-local/test/"
           }
         ]
       }
