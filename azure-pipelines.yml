@@ -20,3 +20,8 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+- task: ArtifactoryGenericDownload@3
+  inputs:
+    connection: 'Kayal_Art'
+    specSource: 'taskConfiguration'
+    failNoOp: true
