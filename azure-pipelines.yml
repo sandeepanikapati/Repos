@@ -10,6 +10,13 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: ArtifactoryToolsInstaller@1
+  inputs:
+    artifactoryService: 'Gaja-Art'
+    cliInstallationRepo: 'jcenter'
+    installCustomVersion: true
+    cliVersion: '1.37.1'
+
 - task: ArtifactoryGenericDownload@3
   inputs:
     specSource: 'taskConfiguration'
@@ -23,3 +30,4 @@ steps:
         ]
       }
     failNoOp: true
+
