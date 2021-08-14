@@ -29,7 +29,6 @@ steps:
     artifactoryDeployService: 'Gaja-Art'
     targetDeployReleaseRepo: 'san-libs-release-local'
     targetDeploySnapshotRepo: 'san-libs-snapshot-local'
-    includeEnvVars: ''
 
 - task: ArtifactoryGenericDownload@3
   inputs:
