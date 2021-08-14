@@ -19,8 +19,11 @@ steps:
         "files": [
           {
             "pattern": "generic-local/*.txt",
-            "target": "new1"
+            "target": "new3"
           }
         ]
       }
-    failNoOp: false
+    collectBuildInfo: true
+    buildName: 'latest_build'
+    buildNumber: '12'
+    failNoOp: true
