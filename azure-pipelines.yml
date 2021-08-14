@@ -16,18 +16,17 @@ steps:
     cliInstallationRepo: 'jana-jfog-cli-generic'
     installCustomVersion: true
     cliVersion: '1.37.1'
-
 - task: ArtifactoryGenericDownload@3
   inputs:
+    connection: 'Gaja-Art'
     specSource: 'taskConfiguration'
     fileSpec: |
       {
         "files": [
           {
             "pattern": "generic-local/*.txt",
-            "target": "generic-local/test/"
+            "target": "new"
           }
         ]
       }
-    failNoOp: true
-
+    failNoOp: false
