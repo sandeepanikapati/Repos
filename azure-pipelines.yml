@@ -19,7 +19,7 @@ steps:
         "files": [
           {
             "pattern": "generic-local/*.txt",
-            "target": "new3"
+            "target": "$(System.DefaultWorkingDirectory)/"
           }
         ]
       }
