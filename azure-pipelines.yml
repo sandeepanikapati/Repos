@@ -13,10 +13,9 @@ steps:
 - task: ArtifactoryToolsInstaller@1
   inputs:
     artifactoryService: 'Gaja-Art'
-    cliInstallationRepo: 'jcenter'
+    cliInstallationRepo: 'jana-jfog-cli-generic'
     installCustomVersion: true
     cliVersion: '1.37.1'
-
 - task: ArtifactoryGenericDownload@3
   inputs:
     specSource: 'taskConfiguration'
