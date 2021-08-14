@@ -10,12 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: ArtifactoryToolsInstaller@1
-  inputs:
-    artifactoryService: 'Gaja-Art'
-    cliInstallationRepo: 'jana-jfog-cli-generic'
-    installCustomVersion: true
-    cliVersion: '1.37.1'
 - task: ArtifactoryGenericDownload@3
   inputs:
     connection: 'Gaja-Art'
@@ -25,7 +19,7 @@ steps:
         "files": [
           {
             "pattern": "generic-local/*.txt",
-            "target": "new"
+            "target": "new1"
           }
         ]
       }
