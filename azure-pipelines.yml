@@ -16,6 +16,9 @@ steps:
     cliInstallationRepo: 'jana-jfog-cli-generic'
     installCustomVersion: true
     cliVersion: '1.37.1'
+    installExtractors: true
+    extractorsInstallationRepo: 'extractors'
+
 - task: ArtifactoryMaven@2
   inputs:
     mavenPomFile: 'pom.xml'
@@ -26,6 +29,8 @@ steps:
     artifactoryDeployService: 'Gaja-Art'
     targetDeployReleaseRepo: 'san-libs-release-local'
     targetDeploySnapshotRepo: 'san-libs-snapshot-local'
+    includeEnvVars: ''
+
 - task: ArtifactoryGenericDownload@3
   inputs:
     specSource: 'taskConfiguration'
