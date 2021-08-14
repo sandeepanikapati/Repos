@@ -16,6 +16,16 @@ steps:
     cliInstallationRepo: 'jana-jfog-cli-generic'
     installCustomVersion: true
     cliVersion: '1.37.1'
+- task: ArtifactoryMaven@2
+  inputs:
+    mavenPomFile: 'pom.xml'
+    goals: 'clean install'
+    artifactoryResolverService: 'Gaja-Art'
+    targetResolveReleaseRepo: 'san-libs-release'
+    targetResolveSnapshotRepo: 'san-libs-snapshot'
+    artifactoryDeployService: 'Gaja-Art'
+    targetDeployReleaseRepo: 'san-libs-release-local'
+    targetDeploySnapshotRepo: 'san-libs-snapshot-local'
 - task: ArtifactoryGenericDownload@3
   inputs:
     specSource: 'taskConfiguration'
