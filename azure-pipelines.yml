@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: san-azure
+  vmImage: ubuntu-latest
 
 steps:
 - task: ArtifactoryGenericDownload@3
