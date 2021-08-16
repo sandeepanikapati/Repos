@@ -26,5 +26,5 @@ steps:
     collectBuildInfo: true
     buildName: 'latest_build'
     buildNumber: '12'
-    failNoOp: true,
-    includeEnvVars: 'JFROG_CLI_LOG_LEVEL=DEBUG'
+    failNoOp: true
+    includeEnvVars: 'export JFROG_CLI_LOG_LEVEL=DEBUG'
