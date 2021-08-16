@@ -10,7 +10,7 @@ variables:
  JFROG_CLI_LOG_LEVEL: Debug
  
 pool:
-  vmImage: ubuntu-latest
+  vmImage: san-azure
 
 steps:
 - task: ArtifactoryGenericDownload@3
