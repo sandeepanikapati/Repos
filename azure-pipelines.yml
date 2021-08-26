@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: san-centos
 
 steps:
 - task: ArtifactoryGenericDownload@3
