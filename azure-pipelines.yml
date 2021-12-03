@@ -10,21 +10,9 @@ pool:
   vmImage: san-centos
 
 steps:
-- task: ArtifactoryGenericDownload@3
+- task: ArtifactoryToolsInstaller@1
   inputs:
-    connection: 'Gaja-Art'
-    specSource: 'taskConfiguration'
-    fileSpec: |
-      {
-        "files": [
-          {
-            "pattern": "generic-local/*.txt",
-            "target": "$(System.DefaultWorkingDirectory)/"
-          }
-        ]
-      }
-    collectBuildInfo: true
-    buildName: 'latest_build'
-    buildNumber: '12'
-    failNoOp: true
-
+    artifactoryService: 'Gaja-Art'
+    cliInstallationRepo: 'jana-jfog-cli-generic'
+    installCustomVersion: true
+    cliVersion: '1.42.3'
