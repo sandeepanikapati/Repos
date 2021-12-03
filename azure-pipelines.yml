@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: san-centos
+  vmImage: 'ubuntu-latest'
 
 steps:
 - task: ArtifactoryToolsInstaller@1
