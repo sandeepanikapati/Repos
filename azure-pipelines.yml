@@ -15,4 +15,4 @@ steps:
     artifactoryService: 'Gaja-Art'
     cliInstallationRepo: 'jana-jfog-cli-generic'
     installCustomVersion: true
-    cliVersion: '1.42.3'
+    cliVersion: '1.52.0'
