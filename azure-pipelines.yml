@@ -10,9 +10,11 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: ArtifactoryToolsInstaller@1
+
+- task: JFrogAudit@1
   inputs:
-    artifactoryService: 'Gaja-Art'
-    cliInstallationRepo: 'jana-jfog-cli-generic'
-    installCustomVersion: true
-    cliVersion: '1.52.0'
+    xrayConnection: 'hts2_xray'
+    workingDirectory: '$(Build.SourcesDirectory)'
+    watchesSource: 'none'
+    licenses: false
+    allowFailBuild: false
