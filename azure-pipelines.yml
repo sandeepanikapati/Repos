@@ -14,7 +14,7 @@ steps:
 - task: JFrogAudit@1
   inputs:
     xrayConnection: 'hts2_xray'
-    workingDirectory: '$(Build.SourcesDirectory)'
+    workingDirectory: '$(Build.SourcesDirectory)/MavenProject/'
     watchesSource: 'none'
     licenses: false
     allowFailBuild: false
