@@ -37,12 +37,7 @@
     <version>2.11.2</version>
 </dependency>
              
- 		<dependency>
-			<groupId>com.thoughtworks.xstream</groupId>
-			<artifactId>xstream</artifactId>
-			<version>1.4.10</version>
-			<scope>test</scope>
-		</dependency>
+
 		<dependency>
 			<groupId>org.kie</groupId>
 			<artifactId>kie-internal</artifactId>
@@ -73,24 +68,8 @@
 			<version>7.21.0.Final</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.drools</groupId>
-			<artifactId>drools-wb-scenario-simulation-editor-api</artifactId>
-			<version>7.21.0.Final</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.drools</groupId>
-			<artifactId>drools-wb-scenario-simulation-editor-backend</artifactId>
-			<version>7.21.0.Final</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.drools</groupId>
-			<artifactId>drools-compiler</artifactId>
-			<version>7.21.0.Final</version>
-			<scope>test</scope>
-		</dependency>
+
+
 		<dependency>
 			<groupId>org.kie</groupId>
 			<artifactId>kie-dmn-feel</artifactId>
