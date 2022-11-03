@@ -17,30 +17,6 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-
-- task: ArtifactoryGenericDownload@3
-  inputs:
-    connection: 'sandy'
-    specSource: 'taskConfiguration'
-    fileSpec: |
-      {
-        "files": [
-          {
-            "pattern": "test/promote.json",
-            "target": "$(Build.ArtifactStagingDirectory)/"
-          }
-        ]
-      }
-    collectBuildInfo: true
-    buildName: '$(Build.DefinitionName)'
-    buildNumber: '$(Build.BuildNumber)'
-    failNoOp: true
-
-- task: ArtifactoryPublishBuildInfo@1
-  inputs:
-    artifactoryService: 'sandy'
-    buildName: '$(Build.DefinitionName)'
-    buildNumber: '$(Build.BuildNumber)'
 - task: ArtifactoryBuildPromotion@1
   inputs:
     artifactoryService: 'sandy'
