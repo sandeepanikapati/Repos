@@ -20,7 +20,7 @@ steps:
 
 - task: ArtifactoryGenericDownload@3
   inputs:
-    connection: 'hts2'
+    connection: 'hts2_art'
     specSource: 'taskConfiguration'
     fileSpec: |
       {
@@ -37,12 +37,12 @@ steps:
     failNoOp: true
 - task: ArtifactoryPublishBuildInfo@1
   inputs:
-    artifactoryService: 'hts2'
+    artifactoryService: 'hts2_art'
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
 - task: ArtifactoryBuildPromotion@1
   inputs:
-    artifactoryService: 'hts2'
+    artifactoryService: 'hts2_art'
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
     targetRepo: 'dll-scaning'
