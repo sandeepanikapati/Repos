@@ -18,16 +18,36 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-
+- task: ArtifactoryGenericDownload@3
+  inputs:
+    connection: 'jy_prd'
+    specSource: 'taskConfiguration'
+    fileSpec: |
+      {
+        "files": [
+          {
+            "pattern": "generic-test-local/jfrog-artifactory-pro-7.41.9-linux.tar.gz",
+            "target": "$(Build.ArtifactStagingDirectory)/"
+          }
+        ]
+      }
+    collectBuildInfo: true
+    buildName: '$(Build.DefinitionName)'
+    buildNumber: '$(Build.BuildNumber)'
+    failNoOp: true
+- task: ArtifactoryPublishBuildInfo@1
+  inputs:
+    artifactoryService: 'jy_prd'
+    buildName: '$(Build.DefinitionName)'
+    buildNumber: '$(Build.BuildNumber)'
 - task: ArtifactoryBuildPromotion@1
   inputs:
     artifactoryService: 'jy_prd'
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
-    projectKey: 'prjt'
-    targetRepo: 'prjt-test-prd'
+    targetRepo: 'insightrepo'
     status: 'Released'
-    sourceRepo: 'prjt-test-stg'
+    sourceRepo: 'generic-test-local'
     includeDependencies: true
     copy: false
     dryRun: false
