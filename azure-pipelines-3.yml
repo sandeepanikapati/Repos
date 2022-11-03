@@ -20,13 +20,13 @@ steps:
 
 - task: ArtifactoryGenericDownload@3
   inputs:
-    connection: 'jy_prd'
+    connection: 'hts2'
     specSource: 'taskConfiguration'
     fileSpec: |
       {
         "files": [
           {
-            "pattern": "generic-test-local/jfrog-artifactory-pro-7.41.9-linux.tar.gz",
+            "pattern": "cloud-front-test/docker-sha256.zip",
             "target": "$(Build.ArtifactStagingDirectory)/"
           }
         ]
@@ -37,17 +37,17 @@ steps:
     failNoOp: true
 - task: ArtifactoryPublishBuildInfo@1
   inputs:
-    artifactoryService: 'jy_prd'
+    artifactoryService: 'hts2'
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
 - task: ArtifactoryBuildPromotion@1
   inputs:
-    artifactoryService: 'jy_prd'
+    artifactoryService: 'hts2'
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
-    targetRepo: 'insightrepo'
+    targetRepo: 'dll-scaning'
     status: 'Released'
-    sourceRepo: 'generic-test-local'
+    sourceRepo: 'cloud-front-test'
     includeDependencies: true
     copy: false
     dryRun: false
