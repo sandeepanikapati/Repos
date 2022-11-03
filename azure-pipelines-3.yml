@@ -26,7 +26,7 @@ steps:
       {
         "files": [
           {
-            "pattern": "cloud-front-test/docker-sha256.zip",
+            "pattern": "test/promote.json",
             "target": "$(Build.ArtifactStagingDirectory)/"
           }
         ]
@@ -46,9 +46,9 @@ steps:
     artifactoryService: 'sandy'
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
-    targetRepo: 'dll-scaning'
+    targetRepo: 'test-repo'
     status: 'Released'
-    sourceRepo: 'cloud-front-test'
+    sourceRepo: 'test'
     includeDependencies: true
     copy: false
     dryRun: false
