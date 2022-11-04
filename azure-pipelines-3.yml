@@ -21,17 +21,17 @@ steps:
 - task: ArtifactoryPublishBuildInfo@1
   inputs:
     artifactoryService: 'sandy'
-    buildName: '$(Build.DefinitionName)'
-    buildNumber: '$(Build.BuildNumber)'
+    buildName: 'jana1'
+    buildNumber: '37'
 
 - task: ArtifactoryBuildPromotion@1
   inputs:
     artifactoryService: 'sandy'
-    buildName: '$(Build.DefinitionName)'
-    buildNumber: '$(Build.BuildNumber)'
-    targetRepo: 'test-repo'
+    buildName: 'jana1'
+    buildNumber: '37'
+    targetRepo: 'testpo'
     status: 'Released'
-    sourceRepo: 'test'
+    sourceRepo: 'jana-libs-snapshot-local'
     includeDependencies: true
     copy: false
     dryRun: false
