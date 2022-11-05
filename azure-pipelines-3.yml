@@ -18,12 +18,6 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: ArtifactoryPublishBuildInfo@1
-  inputs:
-    artifactoryService: 'sandy'
-    buildName: 'jana1'
-    buildNumber: '37'
-
 - task: ArtifactoryBuildPromotion@1
   inputs:
     artifactoryService: 'sandy'
