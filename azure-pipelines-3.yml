@@ -23,7 +23,7 @@ steps:
     artifactoryService: 'sandy'
     buildName: 'jana1'
     buildNumber: '37'
-    targetRepo: 'testpo'
+    targetRepo: 'test'
     status: 'Released'
     sourceRepo: 'jana-libs-snapshot-local'
     includeDependencies: true
