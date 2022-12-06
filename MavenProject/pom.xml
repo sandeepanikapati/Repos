@@ -122,12 +122,7 @@
 </dependency>
              
 
-		<dependency>
-			<groupId>org.kie</groupId>
-			<artifactId>kie-internal</artifactId>
-			<version>7.21.0.Final</version>
-			<scope>provided</scope>
-		</dependency>
+
 		<dependency>
 			<groupId>org.optaplanner</groupId>
 			<artifactId>optaplanner-core</artifactId>
@@ -146,33 +141,7 @@
 			<version>7.21.0.Final</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.kie</groupId>
-			<artifactId>kie-api</artifactId>
-			<version>7.21.0.Final</version>
-			<scope>provided</scope>
-		</dependency>
 
-
-		<dependency>
-			<groupId>org.kie</groupId>
-			<artifactId>kie-dmn-feel</artifactId>
-			<version>7.21.0.Final</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.kie</groupId>
-			<artifactId>kie-dmn-api</artifactId>
-			<version>7.21.0.Final</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.kie</groupId>
-			<artifactId>kie-dmn-core</artifactId>
-			<version>7.21.0.Final</version>
-			<scope>test</scope>
-		</dependency>
-             
 
 
             <dependency>
