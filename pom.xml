@@ -135,7 +135,7 @@
                 <artifactId>netty-codec-http</artifactId>
                 <version>${netty-codec-http.version}</version>
             </dependency>
-            <dependency>
+ <!--              <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-codec-http2</artifactId>
                 <version>${netty-codec-http2.version}</version>
@@ -144,7 +144,7 @@
                 <groupId>io.netty</groupId>
                 <artifactId>netty-codec</artifactId>
                 <version>${netty-codec.version}</version>
-            </dependency>
+            </dependency> -->
             <dependency>
                 <groupId>com.azure</groupId>
                 <artifactId>azure-security-keyvault-keys</artifactId>
