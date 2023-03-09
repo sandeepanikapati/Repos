@@ -22,7 +22,6 @@ steps:
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'install'
-    options: '$(MAVEN_OPTS) -X'
     artifactoryResolverService: 'hts2_ar'
     targetResolveReleaseRepo: 'mvn-libs-release'
     targetResolveSnapshotRepo: 'mvn-libs-snapshot'
