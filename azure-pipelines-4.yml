@@ -21,7 +21,7 @@ steps:
 
 - task: JFrogMaven@1
   inputs:
-    mavenPomFile: 'pom.xml'
+    mavenPomFile: 'MavenProject/pom.xml'
     goals: 'install'
     artifactoryResolverService: 'hts2_art'
     targetResolveReleaseRepo: 'mvn-libs-release'
