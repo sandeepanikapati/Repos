@@ -18,13 +18,7 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: ArtifactoryMaven@2
-  inputs:
-    mavenPomFile: 'pom.xml'
-    goals: 'install'
-    artifactoryResolverService: 'hts2_ar'
-    targetResolveReleaseRepo: 'mvn-libs-release'
-    targetResolveSnapshotRepo: 'mvn-libs-snapshot'
+
 - task: JFrogMaven@1
   inputs:
     mavenPomFile: 'pom.xml'
