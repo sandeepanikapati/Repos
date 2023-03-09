@@ -25,3 +25,14 @@ steps:
     artifactoryResolverService: 'hts2_ar'
     targetResolveReleaseRepo: 'mvn-libs-release'
     targetResolveSnapshotRepo: 'mvn-libs-snapshot'
+- task: JFrogMaven@1
+  inputs:
+    mavenPomFile: 'pom.xml'
+    goals: 'install'
+    artifactoryResolverService: 'hts2_art'
+    targetResolveReleaseRepo: 'mvn-libs-release'
+    targetResolveSnapshotRepo: 'mvn-libs-snapshot'
+    artifactoryDeployService: 'hts2_art'
+    targetDeployReleaseRepo: 'mvn-libs-release'
+    targetDeploySnapshotRepo: 'mvn-libs-snapshot'
+    javaHomeOption: 'JDKVersion'
